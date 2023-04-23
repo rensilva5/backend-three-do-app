@@ -1,0 +1,34 @@
+[debug] [2023-04-23T14:43:11.852Z] ----------------------------------------------------------------------
+[debug] [2023-04-23T14:43:11.855Z] Command:       /Users/renzosilva/.nvm/versions/node/v16.16.0/bin/node /Users/renzosilva/.nvm/versions/node/v16.16.0/bin/firebase functions:shell
+[debug] [2023-04-23T14:43:11.856Z] CLI Version:   11.28.0
+[debug] [2023-04-23T14:43:11.856Z] Platform:      darwin
+[debug] [2023-04-23T14:43:11.856Z] Node Version:  v16.16.0
+[debug] [2023-04-23T14:43:11.862Z] Time:          Sun Apr 23 2023 10:43:11 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-23T14:43:11.862Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-23T14:43:11.868Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-23T14:43:11.939Z] Field ".emulators.functions.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2023-04-23T14:43:11.943Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-23T14:43:11.943Z] > authorizing via signed-in user (renzoasilva@gmail.com)
+[debug] [2023-04-23T14:43:11.943Z] [iam] checking project three-do-api-rs for permissions ["firebase.projects.get"]
+[debug] [2023-04-23T14:43:11.944Z] > refreshing access token with scopes: []
+[debug] [2023-04-23T14:43:11.944Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-23T14:43:11.944Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-23T14:43:12.151Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-04-23T14:43:12.151Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-23T14:43:12.176Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/three-do-api-rs:testIamPermissions [none]
+[debug] [2023-04-23T14:43:12.176Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/three-do-api-rs:testIamPermissions x-goog-quota-user=projects/three-do-api-rs
+[debug] [2023-04-23T14:43:12.177Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/three-do-api-rs:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-23T14:43:12.975Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-23T14:43:12.975Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-04-23T14:43:13.033Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/three-do-api-rs:testIamPermissions 200
+[debug] [2023-04-23T14:43:13.033Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/three-do-api-rs:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-23T14:43:13.170Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-23T14:43:13.325Z] AssertionError [ERR_ASSERTION]: expected "number" but got "string"
+    at new AssertionError (node:internal/assert/assertion_error:466:5)
+    at Object.assertIsNumber (/Users/renzosilva/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/utils.js:395:15)
+    at FunctionsServer.start (/Users/renzosilva/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/serve/functions.js:40:19)
+    at Command.actionFunction [as actionFn] (/Users/renzosilva/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/functionsShellCommandAction.js:58:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
